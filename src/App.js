@@ -25,7 +25,11 @@ const  App = () => {
 
             <button onClick={addTexts}>与える</button>
 
-              <p>今までの食べ物:{addtexts}</p>
+              <p>今までの食べ物:</p>
+
+              <ul>
+                {addtexts.map((food,i)=> <li key={i}>{food}</li>)}
+              </ul>
         </div>
     );
 };
