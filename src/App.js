@@ -11,8 +11,10 @@ const  App = () => {
     const Pressenter = (e) =>{
         if(e.key === 'Enter'){
             setTexts([text, ...addtexts])
+            setText("")
         }
     }
+
 
     return (
         <div className="App">
