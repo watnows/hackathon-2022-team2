@@ -3,17 +3,10 @@ import React, { useState } from 'react';
 const  App = () => {
     const[text,setText] = useState("")
 
-     const[addtext,setAddText] = useState([]);
-
-    // const onClickAddText = () =>{
-    //     setAddTexts(text);
-    //     setText("");
-    // }
-
     const [addtexts, setTexts] = useState([]);
 
     const addTexts = () => {
-        setTexts([text, ...addtexts])
+        setTexts([[text,0], ...addtexts])
     }
 
     return (
