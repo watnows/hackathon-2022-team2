@@ -38,7 +38,7 @@ const  App = () => {
         })
         
         // setTexts([String(this.response), ...addtexts])
-        setTexts([[text, 0], ...addtexts])
+        setTexts([[text, 1], ...addtexts])
     }
 
     const Pressenter = (e) =>{
