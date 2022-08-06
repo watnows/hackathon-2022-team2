@@ -13,7 +13,7 @@ const  App = () => {
     const [addtexts, setTexts] = useState([]);
 
     const addTexts = () => {
-        setTexts([...addtexts, text])
+        setTexts([text, ...addtexts])
     }
 
     return (
