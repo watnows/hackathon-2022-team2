@@ -14,6 +14,34 @@ import reportWebVitals from './reportWebVitals';
 // reportWebVitals();
 
 // ↓↓けんた作業用==========================================================================
-// hackason
+import React,{ useState } from "react";
+import".index.css";
 
+const  App = () => {
+    const[text,setText] = useState("");
+
+    const[addtext,setAddText] = useState("");
+
+    const onClickAddText = () =>{
+        setAddText(text);
+        setText("");
+    }
+
+    return (
+        <div className="App">
+            <input
+              value={text}
+              onChange={(Event) => setText(Event.target.value)}
+              />
+
+            <button onClick={onClickAddText}>与える</button>
+
+              <p>{text}</p>
+
+              <p>今までの食べ物:{addText}</p>
+        </div>
+    );
+};
+ 
+export default App;
 
