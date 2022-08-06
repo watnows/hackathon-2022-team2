@@ -1,30 +1,29 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import { BrowserRouter,Link, Route, Routes, Switch } from "react-router-dom";
+import React, { useState } from 'react';
 
-// import Home from "./components/Home";
-// import Page1 from "./components/Page1";
+const  App = () => {
+    const[text,setText] = useState("")
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//     <div className="App">
-//         <Link to="/">home</Link>
-//         <br />
-//         <Link to="/page1">page1</Link>
-//         <br />
+    const[addtext,setAddText] = useState("");
 
-//         <Routes>
-//           <Route path='/'>
-//             <Home />
-//           </Route>
-//           <Route path='/Page1'>
-//             <Page1 />
-//           </Route>
-//        </Routes>
-//       </div>
-//     </BrowserRouter>
-//   );
-// }
+    const onClickAddText = () =>{
+        setAddText(text);
+        setText("");
+    }
 
-// export default App;
+    return (
+        <div className="App">
+            <input
+              value={text}
+              onChange={(Event) => setText(Event.target.value)}
+              />
+
+            <button onClick={onClickAddText}>与える</button>
+
+              <p>{text}</p>
+
+              <p>今までの食べ物:{addtext}</p>
+        </div>
+    );
+};
+ 
+export default App;
