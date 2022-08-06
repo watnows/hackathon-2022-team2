@@ -6,11 +6,11 @@ const  App = () => {
     const [addtexts, setTexts] = useState([]);
 
     const addTexts = () => {
-        setTexts([text, ...addtexts])
+        setTexts([[text,0], ...addtexts])
     }
     const Pressenter = (e) =>{
         if(e.key === 'Enter'){
-            setTexts([text, ...addtexts])
+            setTexts([[text,0], ...addtexts])
             setText("")
         }
     }
