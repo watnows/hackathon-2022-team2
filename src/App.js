@@ -3,17 +3,15 @@ import React, { useState } from 'react';
 const  App = () => {
     const[text,setText] = useState("")
 
-     const[addtext,setAddText] = useState([]);
-
-    // const onClickAddText = () =>{
-    //     setAddTexts(text);
-    //     setText("");
-    // }
-
     const [addtexts, setTexts] = useState([]);
 
     const addTexts = () => {
         setTexts([text, ...addtexts])
+    }
+    const Pressenter = (e) =>{
+        if(e.key === 'Enter'){
+            setTexts([text, ...addtexts])
+        }
     }
 
     return (
@@ -21,6 +19,8 @@ const  App = () => {
             <input
               value={text}
               onChange={(Event) => setText(Event.target.value)}
+              onKeyPress={Pressenter}
+
               />
 
             <button onClick={addTexts}>与える</button>
