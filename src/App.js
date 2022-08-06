@@ -2,19 +2,51 @@ import React, { useState } from 'react';
 
 const  App = () => {
     const[text,setText] = useState("")
-
     const [addtexts, setTexts] = useState([]);
 
+    // const post = () => {
+    //     const requestOptions = {
+    //     method: 'POST',
+    //     headers:{'Content-Type': 'application/json'},
+    //     body: JSON.stringify({food: text})
+    //     };
+
+    //     fetch("https://dry-temple-23156.herokuapp.com/calorie",requestOptions
+    //     ).then((response)=> response.json()
+    //     ).then((responseJson) =>{
+    //         console.log(responseJson)
+    //     })
+
+
+    
+
     const addTexts = () => {
-        setTexts([[text,0], ...addtexts])
+        const requestOptions = {
+            method: 'POST',
+            mode: 'cors',
+            headers:{'Content-Type': 'application/json'},
+            body: JSON.stringify({food: text})
+        };
+    
+        fetch("https://dry-temple-23156.herokuapp.com/calorie",requestOptions
+        ).then((response)=>{
+            response.json()
+            console.log(response)
+            }
+        ).then((responseJson) =>{
+            console.log(responseJson)
+        })
+        
+        // setTexts([String(this.response), ...addtexts])
+        setTexts([[text, 0], ...addtexts])
     }
+
     const Pressenter = (e) =>{
         if(e.key === 'Enter'){
-            setTexts([[text,0], ...addtexts])
+            addTexts()
             setText("")
         }
     }
-
 
     return (
         <div className="App">
