@@ -41,7 +41,7 @@ const Data = (props) => {
     const url = "https://dry-temple-23156.herokuapp.com/calorie"
    
     const [text, setText] = useState("")
-    const [addtexts, setTexts] = useState([""]);
+    const [addtexts, setTexts] = useState([]);
 
     const requestOptions = {
         method: 'POST',
@@ -89,10 +89,14 @@ const Data = (props) => {
                 <p>摂取カロリー{props.sumcalorie}kcal</p>
 
                 <p>今までの食べ物:</p>
-
+            <div class="box">
                 <ul>
-                    {addtexts.map((food, i) => <li key={i}>{food}</li>)}
+                    {addtexts.map((food, i) => <li key={i}>{food[0]}</li>)}
                 </ul>
+                <ul>
+                    {addtexts.map((food, i) => <li key={i}>{food[1]}kcal</li>)}
+                </ul>
+            </div>
                 {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
             </div>
         </div>
