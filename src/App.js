@@ -8,6 +8,31 @@ import React, { useState } from 'react';
     )
  }
 
+ const Body = () =>{
+    return(
+        <div>
+            <Display/>
+            <Data/>
+        </div>
+    )
+ }
+
+ const Display = () =>{
+    return(
+        <div>
+
+        </div>
+    )
+ }
+
+ const Data = () =>{
+    return(
+        <div>
+
+        </div>
+    )
+ }
+
 const  App = () => {
 
     const[text,setText] = useState("")
@@ -56,6 +81,7 @@ const  App = () => {
     return (
         <div className="App">
             <Header/>
+            <Body/>
             <input
               value={text}
               onChange={(Event) => setText(Event.target.value)}
