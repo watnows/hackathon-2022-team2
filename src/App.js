@@ -1,10 +1,19 @@
-
 import React, { useState } from 'react';
+ import pic from "./イラスト11.png"
+ import "./App.css"
 
-const App = () => {
-    const [text, setText] = useState("")
+
+const  App = () => {
+    const[text,setText] = useState("")
     const [addtexts, setTexts] = useState([]);
-    const [sumcalorie, setsumcalorie] = useState(0)
+    const[sumcalorie,setsumcalorie] = useState(0)
+
+    const  containerStyles = {
+        backgroundImage:"./S_49094683.jpg",
+
+        width: "600px",
+        height: "600px"
+    };
 
 
     const url = "https://dry-temple-23156.herokuapp.com/calorie"
@@ -37,35 +46,35 @@ const App = () => {
     };
 
 
-
-    const Pressenter = (e) => {
-        if (e.key === 'Enter') {
+    const Pressenter = (e) =>{
+        if(e.key === 'Enter'){
             getText()
             setText("")
-            
+        
         }
     }
 
     return (
         <div className="App">
             <input
-                value={text}
-                onChange={(Event) => setText(Event.target.value)}
-                onKeyPress={Pressenter}
+              value={text}
+              onChange={(Event) => setText(Event.target.value)}
+              onKeyPress={Pressenter}
 
-            />
+              />
 
             <button onClick={getText}>与える</button>
 
-            <p>摂取カロリー{sumcalorie}kcal</p>
+                <p>摂取カロリー{sumcalorie}kcal</p>
 
-            <p>今までの食べ物:</p>
+              <p>今までの食べ物:</p>
 
-            <ul>
-                {addtexts.map((food, i) => <li key={i}>{food}</li>)}
-            </ul>
+              <ul>
+                {addtexts.map((food,i)=> <li key={i}>{food}</li>)}
+              </ul>
+              <img className={'size'+ sumcalorie} src={pic} alt="picture"/>
         </div>
     );
 };
-
+ 
 export default App;
