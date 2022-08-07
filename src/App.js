@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
- import pic from "./pictogram.png"
+ import pic from "./イラスト11.png"
  import "./App.css"
 
 
@@ -7,6 +7,7 @@ const  App = () => {
     const[text,setText] = useState("")
     const [addtexts, setTexts] = useState([]);
     const[sumcalorie,setsumcalorie] = useState(0)
+    const[logo,setLogo] = useState("");
 
     // const post = () => {
     //     const requestOptions = {
@@ -20,7 +21,9 @@ const  App = () => {
     //     ).then((responseJson) =>{
     //         console.log(responseJson)
     //     })
-
+    const change = () => {
+        setLogo();
+    }
 
     
 
