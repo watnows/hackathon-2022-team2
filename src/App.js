@@ -86,7 +86,7 @@ const Data = (props) => {
                 />
                 <button onClick={gotoheroku}>与える</button>
 
-                <p>摂取カロリー{props.sumcalorie}kcal</p>
+                <p>総摂取カロリー{props.sumcalorie}kcal</p>
 
                 <p>今日のごはん:</p>
             <div class="box">
