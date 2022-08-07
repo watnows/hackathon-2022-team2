@@ -30,7 +30,9 @@ const Body = () => {
 const Display = (props) => {
     return (
         <div class="component_display">
-            <img className={'size' + Math.round(props.sumcalorie/1000)} src={pic} alt="syasin" />
+            <div class="img_display">
+                <img className={'size' + Math.round(props.sumcalorie/1000)} src={pic} alt="syasin"/>
+            </div>
         </div>
     )
 }
