@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import pic from "./イラスト11.png"
+import pic from "./mercy.png"
 import "./style/App.css"
 import"./style/Header.css"
 import"./style/Body.css"
