@@ -1,8 +1,9 @@
-h3{
+h1{
     color: blue;
+    margin: 0px 300px;
+    
 }
 
 .component_header{
     background-color: rgb(190, 236, 9);
-    padding: 16px 0px;
 }

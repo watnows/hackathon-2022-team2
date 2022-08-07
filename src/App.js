@@ -10,7 +10,7 @@ import"./style/Display.css"
 const Header = () => {
     return (
         <div class = "component_header">
-            <h3>ぼくまさし</h3>
+            <h1>ぼくまさし</h1>
         </div>
     )
 }
