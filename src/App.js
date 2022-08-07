@@ -9,6 +9,7 @@ import React, { useState } from 'react';
  }
 
  const Body = () =>{
+    // keep data here!!
     return(
         <div>
             <Display/>
@@ -20,7 +21,7 @@ import React, { useState } from 'react';
  const Display = () =>{
     return(
         <div>
-
+            <img className={'size1'} src={pic} alt="picture"/>
         </div>
     )
  }
@@ -98,7 +99,7 @@ const  App = () => {
               <ul>
                 {addtexts.map((food,i)=> <li key={i}>{food}</li>)}
               </ul>
-              <img className={'size'+ sumcalorie} src={pic} alt="picture"/>
+              {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
         </div>
     );
 };
