@@ -1,5 +1,9 @@
+.component_app{
+  height: 100%;
+}
 .App {
   text-align: center;
+  
 }
 
 .App-logo {

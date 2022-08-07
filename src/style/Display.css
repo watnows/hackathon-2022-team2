@@ -1,9 +1,17 @@
 .component_display{
     width: 50%;
+    height: 100%;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #FFFEF0;
+    box-shadow: 0rem 1px 8px 3px inset #bbaaa3;
+    border-radius: 1rem;
+
 }
 
 .img_display{
     text-align: center;
+    margin:auto;
     /* height: 100%; */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
