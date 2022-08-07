@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+ import pic from "./pictogram.png"
+ import "./App.css"
+
 
 const  App = () => {
     const[text,setText] = useState("")
@@ -69,6 +72,7 @@ const  App = () => {
               <ul>
                 {addtexts.map((food,i)=> <li key={i}>{food}</li>)}
               </ul>
+              <img className={'size'+ sumcalorie} src={pic} alt="picture"/>
         </div>
     );
 };
