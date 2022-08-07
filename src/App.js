@@ -7,7 +7,7 @@ const App = () => {
     const [sumcalorie, setsumcalorie] = useState(0)
 
 
-    const url = "http://localhost:5000/calorie"
+    const url = "https://dry-temple-23156.herokuapp.com/calorie"
     const getText = () => {
         const requestOptions = {
             method: 'POST',
