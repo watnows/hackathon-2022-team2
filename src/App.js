@@ -8,13 +8,6 @@ const  App = () => {
     const [addtexts, setTexts] = useState([]);
     const[sumcalorie,setsumcalorie] = useState(0)
 
-    const  containerStyles = {
-        backgroundImage:"./S_49094683.jpg",
-
-        width: "600px",
-        height: "600px"
-    };
-
 
     const url = "https://dry-temple-23156.herokuapp.com/calorie"
     const getText = () => {
