@@ -5,6 +5,7 @@ import"./style/Header.css"
 import"./style/Body.css"
 import"./style/Data.css"
 import"./style/Display.css"
+import"./style/loader.css"
 
 
 const Header = () => {
@@ -21,8 +22,11 @@ const Body = () => {
     // keep data here!!
     return (
         <div class = "component_body">
-            <Display sumcalorie={ sumcalorie } />
-            <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            {/* <div class="loader">Loading...</div> */}
+            <div class = "center_body">
+                <Display sumcalorie={ sumcalorie } />
+                <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            </div>
         </div>
     )
 }
@@ -86,9 +90,9 @@ const Data = (props) => {
                 />
                 <button onClick={gotoheroku}>与える</button>
 
-                <p>摂取カロリー{props.sumcalorie}kcal</p>
+                <p>総摂取カロリー{props.sumcalorie}kcal</p>
 
-                <p>今までの食べ物:</p>
+                <p>今日のごはん:</p>
             <div class="box">
                 <ul>
                     {addtexts.map((food, i) => <li key={i}>{food[0]}</li>)}
