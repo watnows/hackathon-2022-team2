@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const  App = () => {
     const[text,setText] = useState("")
     const [addtexts, setTexts] = useState([]);
+    const[sumcalorie,setsumcalorie] = useState(0)
 
     // const post = () => {
     //     const requestOptions = {
@@ -39,12 +40,14 @@ const  App = () => {
         
         // setTexts([String(this.response), ...addtexts])
         setTexts([[text, 1], ...addtexts])
+        setsumcalorie(sumcalorie+1)
     }
 
     const Pressenter = (e) =>{
         if(e.key === 'Enter'){
             addTexts()
             setText("")
+        
         }
     }
 
@@ -58,6 +61,8 @@ const  App = () => {
               />
 
             <button onClick={addTexts}>与える</button>
+
+                <p>摂取カロリー{sumcalorie}kcal</p>
 
               <p>今までの食べ物:</p>
 
