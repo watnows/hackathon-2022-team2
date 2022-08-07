@@ -88,7 +88,7 @@ const Data = (props) => {
 
                 <p>摂取カロリー{props.sumcalorie}kcal</p>
 
-                <p>今までの食べ物:</p>
+                <p>今日のごはん:</p>
             <div class="box">
                 <ul>
                     {addtexts.map((food, i) => <li key={i}>{food[0]}</li>)}
