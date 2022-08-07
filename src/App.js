@@ -7,7 +7,6 @@ const  App = () => {
     const[text,setText] = useState("")
     const [addtexts, setTexts] = useState([]);
     const[sumcalorie,setsumcalorie] = useState(0)
-    const[logo,setLogo] = useState("");
 
     // const post = () => {
     //     const requestOptions = {
@@ -21,11 +20,13 @@ const  App = () => {
     //     ).then((responseJson) =>{
     //         console.log(responseJson)
     //     })
-    const change = () => {
-        setLogo();
-    }
+  
+    const  containerStyles = {
+        backgroundImage:"./S_49094683.jpg",
 
-    
+        width: "600px",
+        height: "600px"
+    };
 
     const addTexts = () => {
         const requestOptions = {
