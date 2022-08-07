@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import pic from "./イラスト11.png"
-import "./App.css"
+import "./style/App.css"
+import"./style/Header.css"
+import"./style/Body.css"
+import"./style/Data.css"
+import"./style/Display.css"
+
 
 const Header = () => {
     return (
