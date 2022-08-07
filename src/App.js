@@ -2,8 +2,14 @@ import React, { useState } from 'react';
  import pic from "./イラスト11.png"
  import "./App.css"
 
+ const Header = () =>{
+    return(
+        <h3>ぼくまさし</h3>
+    )
+ }
 
 const  App = () => {
+
     const[text,setText] = useState("")
     const [addtexts, setTexts] = useState([]);
     const[sumcalorie,setsumcalorie] = useState(0)
@@ -49,6 +55,7 @@ const  App = () => {
 
     return (
         <div className="App">
+            <Header/>
             <input
               value={text}
               onChange={(Event) => setText(Event.target.value)}
