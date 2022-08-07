@@ -94,7 +94,8 @@ const Data = (props) => {
                     {addtexts.map((food, i) => <li key={i}>{food[0]}</li>)}
                 </ul>
                 <ul>
-                    {addtexts.map((food, i) => <li key={i}>{food[1]}kcal</li>)}
+                    {/* 全角スペースわざとです */}
+                    {addtexts.map((food, i) => <li key={i}>　{food[1]}kcal</li>)}
                 </ul>
             </div>
                 {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
