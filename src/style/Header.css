@@ -3,5 +3,6 @@ h3{
 }
 
 .component_header{
-    background-color: brown;
+    background-color: rgb(190, 236, 9);
+    padding: 16px 0px;
 }

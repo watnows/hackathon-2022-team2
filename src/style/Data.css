@@ -2,3 +2,7 @@
     width: 50%;
     background-color: aqua;
 }
+ 
+ul{
+    list-style: none;
+}
