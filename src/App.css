@@ -38,22 +38,26 @@
 }
 
 .size0{
-  width: 200px;
+  width: 100px;
   height: 200px;
 }
 .size1{
-  width: 300px;
+  width: 150px;
   height: 200px;
 }
 .size2{
-  width: 400px;
+  width: 200px;
   height: 200px;
 }
 .size3{
-  width: 500px;
+  width: 250px;
   height: 200px;
 }
 .size4{
-  width: 600px;
+  width: 300px;
+  height: 200px;
+}
+.size5{
+  width: 350px;
   height: 200px;
 }
