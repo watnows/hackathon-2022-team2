@@ -9,7 +9,9 @@ import"./style/Display.css"
 
 const Header = () => {
     return (
-        <h3>ぼくまさし</h3>
+        <div class = "component_header">
+            <h3>ぼくまさし</h3>
+        </div>
     )
 }
 
@@ -19,15 +21,17 @@ const Body = () => {
     // keep data here!!
     return (
         <div>
-            <Display sumcalorie={ sumcalorie } />
-            <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            <div class = "component_body">
+                <Display sumcalorie={ sumcalorie } />
+                <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            </div>
         </div>
     )
 }
 
 const Display = (props) => {
     return (
-        <div>
+        <div class="component_display">
             <img className={'size' + Math.round(props.sumcalorie/1000)} src={pic} alt="syasin" />
         </div>
     )
@@ -73,22 +77,24 @@ const Data = (props) => {
     }
 
     return (
-        <div className="App">
-            <input
-                value={text}
-                onChange={(Event) => setText(Event.target.value)}
-                onKeyPress={Pressenter}
-            />
-            <button onClick={gotoheroku}>与える</button>
+        <div class = "component_data">
+            <div className="App">
+                <input
+                    value={text}
+                    onChange={(Event) => setText(Event.target.value)}
+                    onKeyPress={Pressenter}
+                />
+                <button onClick={gotoheroku}>与える</button>
 
-            <p>摂取カロリー{props.sumcalorie}kcal</p>
+                <p>摂取カロリー{props.sumcalorie}kcal</p>
 
-            <p>今までの食べ物:</p>
+                <p>今までの食べ物:</p>
 
-            <ul>
-                {addtexts.map((food, i) => <li key={i}>{food}</li>)}
-            </ul>
-            {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
+                <ul>
+                    {addtexts.map((food, i) => <li key={i}>{food}</li>)}
+                </ul>
+                {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
+            </div>
         </div>
     )
 
@@ -96,7 +102,7 @@ const Data = (props) => {
 
 const App = () => {
     return (
-        <div>
+        <div class = "component_app">
             <Header />
             <Body />
         </div>
