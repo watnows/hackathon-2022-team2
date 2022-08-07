@@ -5,6 +5,7 @@ import"./style/Header.css"
 import"./style/Body.css"
 import"./style/Data.css"
 import"./style/Display.css"
+import"./style/loader.css"
 
 
 const Header = () => {
@@ -21,8 +22,11 @@ const Body = () => {
     // keep data here!!
     return (
         <div class = "component_body">
-            <Display sumcalorie={ sumcalorie } />
-            <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            {/* <div class="loader">Loading...</div> */}
+            <div class = "center_body">
+                <Display sumcalorie={ sumcalorie } />
+                <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
+            </div>
         </div>
     )
 }
