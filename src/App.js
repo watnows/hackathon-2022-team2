@@ -20,12 +20,10 @@ const Body = () => {
     const [sumcalorie, setsumcalorie] = useState(0)
     // keep data here!!
     return (
-        <div>
             <div class = "component_body">
                 <Display sumcalorie={ sumcalorie } />
                 <Data sumcalorie={sumcalorie} setsumcalorie={ setsumcalorie } />
             </div>
-        </div>
     )
 }
 
