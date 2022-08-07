@@ -4,4 +4,6 @@
 
 .img_display{
     text-align: center;
+    /* height: 100%; */
+    background-color: blueviolet;
 }
