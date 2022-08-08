@@ -3,7 +3,7 @@
 }
 .App {
   text-align: center;
-  
+  height:100vh;
 }
 
 .App-logo {
@@ -41,7 +41,7 @@
   }
 }
 
-.size0{
+/* .size0{
   width: 150px;
   height:250px;
 }
@@ -81,4 +81,4 @@
   width: 375px;
   height: 250px;
 }
-
+ */
