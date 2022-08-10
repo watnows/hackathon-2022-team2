@@ -88,6 +88,7 @@ const Data = (props) => {
             <div className="App">
                 <input
                     value={text}
+                    placeholder="食べ物を入力"
                     onChange={(Event) => setText(Event.target.value)}
                     onKeyPress={Pressenter}
                 />
