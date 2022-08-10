@@ -110,7 +110,6 @@ const Data = (props) => {
             </div>
         </div>
     )
-
 }
 
 const App = () => {
