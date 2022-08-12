@@ -1,6 +1,6 @@
 .component_display{
     width: 50%;
-    height: 100vh;
+    height: min-content;
     margin: 2rem;
     padding: 1rem;
     background-color: #FFFEF0;
@@ -11,6 +11,4 @@
 .img_display{
     text-align: center;
     margin:auto;
-    /* height: 100%; */
-    /* background-color: blueviolet; */
 }
