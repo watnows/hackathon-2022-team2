@@ -49,6 +49,7 @@ const Data = (props) => {
    
     const [text, setText] = useState("")
     const [addtexts, setTexts] = useState([]);
+    const [loader_color, setload_color] = useState("transparent");
 
     const requestOptions = {
         method: 'POST',
@@ -66,10 +67,13 @@ const Data = (props) => {
                 console.log(body["calorie"])
                 setTexts([[text, body["calorie"]], ...addtexts])
                 props.setsumcalorie(props.sumcalorie + parseInt(body["calorie"]))
+                setload_color("transparent")
                 // const responsejson: restaurantinfo[] = body["data"]
             }
             catch (err) {
+                setload_color("transparent")
             } finally {
+                setload_color("transparent")
             }
         })();
     }
@@ -79,12 +83,18 @@ const Data = (props) => {
         }
     }
     const gotoheroku = () => {
+        if(text !== ""){
+            setload_color("#8AC6D1")
+        }
+        // setload_color("#8AC6D1")
+        // setload_color("#9c0505")
         setText("")
         getText()
     }
 
     return (
         <div class = "component_data">
+            <div class="loader" style={{color:loader_color}}>Loading...</div>
             <div className="App">
                 <input
                     value={text}

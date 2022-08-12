@@ -9,13 +9,13 @@
 }
 
 .loader {
-    color: #9c0505;
     font-size: 20px;
-    margin: 100px auto;
+    margin: 0px auto;
     width: 1em;
     height: 1em;
     border-radius: 50%;
     position: relative;
+    top:150px;
     text-indent: -9999em;
     -webkit-animation: load4 1.3s infinite linear;
     animation: load4 1.3s infinite linear;
