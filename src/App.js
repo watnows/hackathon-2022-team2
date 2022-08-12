@@ -50,7 +50,8 @@ const Data = (props) => {
     const [text, setText] = useState("")
     const [addtexts, setTexts] = useState([]);
     const [loader_color, setload_color] = useState("transparent");
-
+    const [first_load, setfirst_load] = useState(true);
+    
     const requestOptions = {
         method: 'POST',
         mode: 'cors',
@@ -63,6 +64,9 @@ const Data = (props) => {
             try {
                 console.log("いれたご飯", text)
                 const response = await fetch(url, requestOptions);
+                if(first_load === true){
+                    return
+                }
                 const body = await response.json();
                 console.log(body["calorie"])
                 setTexts([[text, body["calorie"]], ...addtexts])
@@ -77,6 +81,14 @@ const Data = (props) => {
             }
         })();
     }
+
+    // startup heroku
+    if(first_load === true){
+        getText()
+        console.log("this is first load")
+        setfirst_load(false)
+    }
+
     const Pressenter = (e) => {
         if (e.key === 'Enter') {
             gotoheroku()
