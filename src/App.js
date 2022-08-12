@@ -67,6 +67,7 @@ const Data = (props) => {
                 if(first_load === true){
                     return
                 }
+                console.log("this is not first load")
                 const body = await response.json();
                 console.log(body["calorie"])
                 setTexts([[text, body["calorie"]], ...addtexts])
