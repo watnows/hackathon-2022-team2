@@ -121,13 +121,16 @@ const Data = (props) => {
 
                 <p>今日のごはん:</p>
             <div class="box">
-                <ul>
-                    {addtexts.map((food, i) => <li key={i}>{food[0]}</li>)}
-                </ul>
-                <ul>
-                    {/* 全角スペースわざとです */}
-                    {addtexts.map((food, i) => <li key={i}>　{food[1]}kcal</li>)}
-                </ul>
+                <div className='food_list'>
+                    <ul>
+                        {/* 全角スペースわざとです */}
+                        {addtexts.map((food, i) => <li key={i}>{food[0]}　</li>)}
+                    </ul>
+                    <ul>
+                        {/* 全角スペースわざとです */}
+                        {addtexts.map((food, i) => <li key={i}>　{food[1]}kcal</li>)}
+                    </ul>
+                </div>
             </div>
                 {/* <img className={'size'+ sumcalorie} src={pic} alt="picture"/> */}
             </div>
