@@ -11,4 +11,26 @@
 .img_display{
     text-align: center;
     margin:auto;
+    /* height: 100%; */
+    /* background-color: blueviolet; */
+}
+
+@media screen and (min-width: 767px) {
+    .component_display{
+        height: 100vh;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .component_display{
+        margin: 1rem;
+        width: auto;
+        /* height: 100vh;
+        margin: 2rem;
+        padding: 1rem;
+        background-color: #FFFEF0;
+        box-shadow: 0rem 1px 8px 3px inset #bbaaa3;
+        border-radius: 1rem; */
+    }
 }
