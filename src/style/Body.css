@@ -4,13 +4,7 @@
 }
 
 @media screen and (min-width: 767px) {
-	.center_body{
+    .center_body{
         display: flex;
-    }
-}
-
-@media screen and (max-width: 767px) {
-	.center_body{
-        /* width: 100%; */
     }
 }
