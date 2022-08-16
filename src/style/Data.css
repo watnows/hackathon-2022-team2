@@ -3,12 +3,11 @@
     background-color: #FFFEF0;
     border-radius: 1rem;
     margin: 2rem;
-    margin-left: 0rem;
     padding: 1rem;
     box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #bbaaa3;
     /* background-color: aqua; */
 }
- 
+
 ul{
     list-style: none;
 }
@@ -18,5 +17,25 @@ ul{
     height: 130px;               
     border: 1px solid #000;      
     overflow-y: scroll;
-    display: flex;         
+    display: flex;
   }
+
+  @media screen and (min-width: 767px) {
+    .component_data{
+        margin-left: 1rem;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+	.component_data{
+        margin: 1rem;
+        width: auto;
+        /* background-color: #FFFEF0;
+        border-radius: 1rem;
+        margin: 2rem;
+        margin-left: 0rem;
+        padding: 1rem;
+        box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #bbaaa3; */
+        /* background-color: aqua; */
+    }
+}
