@@ -4,7 +4,6 @@
     background-color: #FFFEF0;
     border-radius: 1rem;
     margin: 2rem;
-    margin-left: 0rem;
     padding: 1rem;
     box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem #bbaaa3;
     /* background-color: aqua; */
@@ -29,3 +28,9 @@ ul{
     display: flex;
     width: max-content;
   }
+
+@media screen and (min-width: 767px) {
+    .component_data{
+        margin-left: 1rem;
+    }
+}
