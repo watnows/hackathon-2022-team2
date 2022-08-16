@@ -1,5 +1,5 @@
 .component_display{
-    width: 50%;
+    /* width: 50%; */
     height: min-content;
     margin: 2rem;
     padding: 1rem;
@@ -15,6 +15,14 @@
 
 @media screen and (min-width: 767px) {
     .component_display{
+        width: 50%;
         margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .component_display{
+        display: flex;
+        margin: 1rem;
     }
 }

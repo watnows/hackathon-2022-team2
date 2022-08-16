@@ -1,6 +1,10 @@
 .center_body{
-    display: flex;
     background-color: #FAE3D9;
     height: 100%;
 }
 
+@media screen and (min-width: 767px) {
+    .center_body{
+        display: flex;
+    }
+}
