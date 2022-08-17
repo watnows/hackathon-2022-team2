@@ -6,5 +6,6 @@
 @media screen and (min-width: 767px) {
     .center_body{
         display: flex;
+        text-align: center;
     }
 }
