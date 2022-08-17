@@ -141,6 +141,7 @@ const Data = (props) => {
 const App = () => {
     return (
         <div class = "component_app">
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"></meta>
             <Header />
             <Body />
         </div>
