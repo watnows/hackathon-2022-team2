@@ -9,3 +9,9 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .center_body{
+        padding: 1rem 0rem;
+    }
+}

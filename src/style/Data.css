@@ -38,5 +38,6 @@ ul{
 @media screen and (max-width: 767px) {
     .component_data{
         margin: 1rem;
+        margin-bottom: 0rem;
     }
 }
