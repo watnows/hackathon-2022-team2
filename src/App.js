@@ -5,7 +5,7 @@ import"./style/Header.css"
 import"./style/Body.css"
 import"./style/Data.css"
 import"./style/Display.css"
-import"./style/loader.css"
+// import"./style/loader.css"
 
 
 const Header = () => {
