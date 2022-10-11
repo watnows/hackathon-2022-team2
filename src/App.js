@@ -16,7 +16,6 @@ const Header = () => {
     )
 }
 
-
 const Body = () => {
     const [sumcalorie, setsumcalorie] = useState(0)
     // keep data here!!
