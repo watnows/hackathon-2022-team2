@@ -7,7 +7,6 @@ import"./style/Data.css"
 import"./style/Display.css"
 import"./style/loader.css"
 
-
 const Header = () => {
     return (
         <div className = "component_header">
