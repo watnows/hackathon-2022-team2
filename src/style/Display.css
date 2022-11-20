@@ -2,15 +2,24 @@
     /* width: 50%; */
     height: min-content;
     margin: 2rem;
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
     background-color: #FFFEF0;
     box-shadow: 0rem 1px 8px 3px inset #bbaaa3;
     border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .img_display{
-    text-align: center;
     margin:auto;
+    overflow: hidden;
+}
+
+.masashi_img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 767px) {

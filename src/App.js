@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import pic from "./mercy.png"
+import pic_fac from "./3hFufIt8cBP9dfw1668932739_1668932794.png"
 import "./style/App.css"
 import"./style/Header.css"
 import"./style/Body.css"
@@ -36,7 +37,8 @@ const Display = (props) => {
             <div class="img_display">
                 {/* <img style ={(150 + props.sumcalorie/1000)}px src={pic} alt="syasin"/> */}
                 {/* <img className={'size' + Math.round(props.sumcalorie/1000)} width={150 + props.sumcalorie/1000} src={pic} alt="syasin"/> */}
-                <img  width={270 + props.sumcalorie/100} height={400} src={pic} alt="syasin"/>
+                <img  width={270 + props.sumcalorie/100} height={400} src={pic} alt="syasin" className='masashi_img'/>
+                <img  width={270} height={400} src={pic_fac} alt="syasin"/>
             </div>
         </div>
     )
@@ -112,6 +114,7 @@ const Data = (props) => {
                     placeholder="食べ物を入力"
                     onChange={(Event) => setText(Event.target.value)}
                     onKeyPress={Pressenter}
+                    type="search"
                 />
                 <button onClick={gotoheroku}>与える</button>
 
