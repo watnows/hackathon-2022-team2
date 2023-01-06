@@ -83,6 +83,20 @@ const Data = (props) => {
         })();
     }
 
+    const alternativeGetText = () => {
+        if (text === "") {return}
+        let alternativeCalorie = Math.floor(Math.random() * 10) !== 1 ?
+            Math.floor(Math.random() * 1000) :
+            Math.floor(Math.random() * 1000) * 5;
+        addtexts.map((food) => {
+            if (food[0] === text) {
+                alternativeCalorie = food[1]
+            }
+        })
+        setTexts([[text, alternativeCalorie], ...addtexts])
+        props.setsumcalorie(props.sumcalorie + alternativeCalorie)
+    }
+
     // startup heroku
     if(first_load === true){
         getText()
@@ -103,6 +117,7 @@ const Data = (props) => {
         // setload_color("#9c0505")
         setText("")
         getText()
+        alternativeGetText()
     }
 
     return (
